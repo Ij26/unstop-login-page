@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - Unstop</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="left-section">
+        <img src="image-unstop.jpg" alt="Phone Illustration" />
+      </div>
+      <div class="right-section">
+        <h1>Welcome to <span class="brand">Unstop</span></h1>
+        <button class="social-btn google-btn">Login with Google</button>
+        <button class="social-btn facebook-btn">Login with Facebook</button>
+        <div class="divider"><span>OR</span></div>
+        <form id="loginForm">
+          <div class="input-group">
+            <input type="text" id="username" placeholder="Username" required />
+          </div>
+          <div class="input-group">
+            <input type="email" id="email" placeholder="Email" required />
+          </div>
+          <div class="input-group">
+            <input
+              type="password"
+              id="password"
+              placeholder="Password"
+              required
+            />
+          </div>
+          <div class="remember-section">
+            <label>
+              <input type="checkbox" id="rememberMe" /> Remember me
+            </label>
+            <a href="#" id="forgotPassword">Forgot Password?</a>
+          </div>
+          <button type="submit" class="login-btn">Login</button>
+        </form>
+        <p>Don't have an account? <a href="#">Register</a></p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

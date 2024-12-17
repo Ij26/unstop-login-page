@@ -1,0 +1,175 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  max-width: 1200px; /* For large screens */
+  width: 100%;
+}
+
+.left-section {
+  display: none; /* Hide image by default on small screens */
+  flex: 1;
+  background-color: #f3f4f6;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.left-section img {
+  width: 80%;
+  height: auto;
+}
+
+.right-section {
+  flex: 1;
+  padding: 2rem;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.brand {
+  color: #6c5ce7;
+  font-weight: bold;
+}
+
+.social-btn {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.google-btn {
+  background-color: #ea4335;
+}
+
+.facebook-btn {
+  background-color: #3b5998;
+}
+
+.divider {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.input-group {
+  margin: 10px 0;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.remember-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
+
+.remember-section label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.login-btn {
+  width: 100%; /* Makes the button occupy full width */
+  padding: 12px 0; /* Adjust vertical padding */
+  background-color: #6c5ce7; /* Primary color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.login-btn:hover {
+  background-color: #5a4ac7; /* Darker shade on hover */
+  transform: scale(1.02); /* Slight hover effect */
+}
+.login-btn:active {
+  transform: scale(0.98); /* Shrink slightly when clicked */
+}
+
+p {
+  margin-top: 15px;
+  font-size: 0.9rem;
+}
+
+p a {
+  text-decoration: none;
+  color: #6c5ce7;
+}
+
+p a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row; /* Side-by-side layout on tablets and desktops */
+  }
+
+  .left-section {
+    display: flex; /* Show image on larger screens */
+  }
+
+  .right-section {
+    flex: 1;
+    padding: 3rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .left-section img {
+    width: 100%; /* Full width for large screens */
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+}
